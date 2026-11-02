@@ -1,36 +1,46 @@
-# Road Ledger GitHub Pages Website
+# Road Ledger
 
-This folder is ready to upload to a public GitHub repository and publish with GitHub Pages.
+**Every Mile. Every Record.** — Ain’t Cloud Software
 
-## Publish it
+Road Ledger is a local-first freight operations app for drivers to organize loads, stops, loaded/deadhead mileage, detention, documents, equipment, expenses, and estimated pay. It is designed for semi-truck drivers, owner-operators, hotshot drivers, cargo-van operators, and other freight professionals.
 
-1. Sign in to GitHub and create a public repository named `road-ledger`.
-2. Upload every file from this folder to the repository root.
-3. Open the repository's **Settings**.
-4. Choose **Pages**.
-5. Under **Build and deployment**, select **Deploy from a branch**.
-6. Select the `main` branch and `/ (root)` folder, then save.
-7. Wait for GitHub to publish the site.
+## App documentation
 
-The address will normally be:
+- [Complete app specification and requirements](docs/ROAD_LEDGER_APP_SPEC.md) — workflows, GPS/state mileage, scanner and AI import, check-in/detention, pay periods, equipment, records, privacy, technical history, known fixes, and release acceptance gates.
+- [Latest focused change requests](docs/app-change-requests.md) — compact Active Run timer layout, fully visible Confirm Delivered button, and optional arrival-based check-in/free time.
 
-`https://YOUR-USERNAME.github.io/road-ledger/`
+The specification distinguishes requested behavior from verified implementation. **Updating these documents does not update the Android app or produce an APK.**
 
-The privacy-policy address will be:
+## Repository scope
 
-`https://YOUR-USERNAME.github.io/road-ledger/privacy.html`
+This repository currently contains the Road Ledger public website, privacy/support pages, and app requirements. The Android source was not present in the root inspected on November 2, 2026.
 
-Use the privacy-policy URL in Google Play Console. Use the home-page URL as the app website.
+Historical Android source location: [Spike1976/road-remix](https://github.com/Spike1976/road-remix). Its current branch, build identity, version, and feature status require source inspection. Preserve its privacy and existing installed-app identity when implementing changes.
 
-## Included files
+## Website files
 
 - `index.html` — main Road Ledger website
 - `privacy.html` — public privacy policy
 - `support.html` — support and tester instructions
-- `styles.css` — responsive design and Road Ledger theme
-- `script.js` — mobile menu and automatic footer year
-- `favicon.svg` — Road Ledger browser icon
+- `styles.css` — responsive design and theme
+- `script.js` — mobile menu and footer year
+- `favicon.svg` — browser icon
+- `docs/` — app specifications and change requests
 
-## Before publishing
+## GitHub Pages configuration
 
-Review the privacy policy against the exact production AAB. If the app uses analytics, crash reporting, cloud storage, advertising, accounts, or another data processor not described in the policy, update the policy and the Google Play Data safety form so they match.
+In repository **Settings → Pages**, select **Deploy from a branch**, then **main** and **/ (root)**.
+
+Expected URLs after Pages is successfully configured and deployed:
+
+- Website: https://spike1976.github.io/road-ledger/
+- Privacy policy: https://spike1976.github.io/road-ledger/privacy.html
+- Support: https://spike1976.github.io/road-ledger/support.html
+
+Deployment status has not been verified by this documentation update.
+
+## Testing and publishing
+
+The website links to [Android internal testing](https://play.google.com/apps/internaltest/4700938526640166864). Access may require the tester's Google account email to be added by the administrator. The link's presence is not verification of a particular APK version or feature.
+
+Before a release, match the privacy policy and Google Play Data safety declarations to the actual AAB, permissions, storage, and external processors. Exclude personal run data, credentials, and signing keys from repository content. See the complete specification for implementation and release checks.
