@@ -130,3 +130,30 @@ footer { padding: 3rem 5vw; border-top: 1px solid var(--line); background: var(-
   .button, .feature-grid article { transition: transform .2s ease, border-color .2s ease; }
   .feature-grid article:hover { transform: translateY(-4px); border-color: #54708c; }
 }
+
+/* Road Ledger driver resource pages */
+.guide-page { max-width: 1160px; margin: 0 auto; padding: clamp(3.5rem,7vw,6rem) 5vw; }
+.guide-page > h1 { font-size: clamp(2.8rem,6vw,5.8rem); }
+.page-lede { max-width: 760px; font-size: clamp(1.05rem,2vw,1.3rem); color: var(--muted); margin: 0 0 3rem; }
+.step-grid { display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; margin: 2rem 0 4rem; }
+.step-grid article,.guide-panel,.faq-list details { border: 1px solid var(--line); border-radius: 20px; background: linear-gradient(150deg,var(--card),var(--navy-2)); padding: 1.5rem; }
+.step-grid article h2,.guide-panel h2 { font-size: 1.55rem; margin: .7rem 0; }
+.step-grid p,.guide-panel p,.faq-list p { color: var(--muted); }
+.step-number { color: var(--orange); font-weight: 900; letter-spacing: .14em; }
+.guide-panel { margin: 1.5rem 0; }
+.guide-panel p { max-width: 850px; }
+.guide-panel a:not(.button),.step-grid a,.faq-list a { color: #85d0ff; }
+.faq-list { display:grid; gap: .8rem; }
+.faq-list details { padding: 0; overflow: hidden; }
+.faq-list summary { cursor: pointer; font-weight: 750; padding: 1.2rem 1.5rem; font-size: 1.1rem; }
+.faq-list summary:focus-visible { outline: 3px solid var(--orange); outline-offset: -3px; }
+.faq-list details[open] summary { color: var(--orange); border-bottom: 1px solid var(--line); }
+.faq-list details p { padding: 0 1.5rem 1.25rem; margin-bottom: 0; }
+.download-grid { display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+.download-grid .guide-panel { margin: 0; }
+.small-note { font-size:.86rem; }
+.safety-steps { padding-left: 1.4rem; color: var(--muted); }
+.safety-steps li { margin: .65rem 0; }
+[aria-current="page"] { color: var(--orange) !important; }
+@media(max-width:900px){.step-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }}
+@media(max-width:650px){.step-grid,.download-grid{grid-template-columns:1fr;} .guide-page{padding-top:2.5rem;} .faq-list summary{font-size:1rem;}}
