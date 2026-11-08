@@ -22,6 +22,9 @@ Historical Android source location: [Spike1976/road-remix](https://github.com/Sp
 - `index.html` — main Road Ledger website
 - `privacy.html` — public privacy policy
 - `support.html` — support and tester instructions
+- `getting-started.html` — setup, backup, load workflow and detention explanations
+- `faq.html` — frequently asked questions and troubleshooting
+- `releases.html` — installation channels and safe updates
 - `styles.css` — responsive design and theme
 - `script.js` — mobile menu and footer year
 - `favicon.svg` — browser icon
@@ -36,6 +39,9 @@ Expected URLs after Pages is successfully configured and deployed:
 - Website: https://spike1976.github.io/road-ledger/
 - Privacy policy: https://spike1976.github.io/road-ledger/privacy.html
 - Support: https://spike1976.github.io/road-ledger/support.html
+- Getting started: https://spike1976.github.io/road-ledger/getting-started.html
+- FAQ: https://spike1976.github.io/road-ledger/faq.html
+- Downloads: https://spike1976.github.io/road-ledger/releases.html
 
 Deployment status has not been verified by this documentation update.
 
